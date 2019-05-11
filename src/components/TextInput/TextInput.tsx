@@ -1,10 +1,10 @@
 import React from 'react'
 import classnames from 'classnames'
-import { inputSizes } from '../../styles/types'
+import { size } from '../../types'
 import './TextInput.scss'
 
 interface ITextInput extends React.InputHTMLAttributes<HTMLInputElement> {
-  inputSize?: inputSizes
+  inputSize?: size
 }
 
 export const TextInput = ({

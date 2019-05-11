@@ -1,11 +1,11 @@
 import React from 'react'
 import classnames from 'classnames'
-import { inputSizes, appearance } from '../../styles/types'
+import { size, appearance } from '../../types'
 import './Button.scss'
 
 interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   appearance?: appearance,
-  size?: inputSizes
+  size?: size
 }
 
 export const Button = ({
