@@ -20,8 +20,14 @@ $ButtonSizes: (
   border-radius: var(--radius);
   color: var(--color-white);
   font-size: var(--font-size-5);
-
   cursor: pointer;
+  outline: none;
+
+  &:disabled {
+    background-color: var(--color-gray-500);
+    border-color: var(--color-gray-500);
+    cursor: not-allowed;
+  }
 }
 
 /*=============================================
@@ -32,6 +38,7 @@ $ButtonSizes: (
  *
  * 1. appearances
  * 2. sizes
+ * 3. block
  *
  */
 
@@ -39,8 +46,18 @@ $ButtonSizes: (
 
 @each $appearance in $appearances {
   .c-button--#{$appearance} {
-    background-color: var(--color-#{$appearance});
-    border-color: var(--color-#{$appearance});
+    background-color: var(--color-#{$appearance}-500);
+    border-color: var(--color-#{$appearance}-500);
+
+    &:hover {
+      background-color: var(--color-#{$appearance}-400);
+      border-color: var(--color-#{$appearance}-400);
+    }
+
+    &:active {
+      background-color: var(--color-#{$appearance}-600);
+      border-color: var(--color-#{$appearance}-600);
+    }
   }
 }
 
@@ -52,4 +69,10 @@ $ButtonSizes: (
     padding-left: nth($value, 2);
     padding-right: nth($value, 2);
   }
+}
+
+/*----------  3. block  ----------*/
+
+.c-button--block {
+  width: 100%;
 }

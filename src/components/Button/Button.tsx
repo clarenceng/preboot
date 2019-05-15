@@ -4,24 +4,32 @@ import { size, appearance } from '../../types'
 import './Button.scss'
 
 interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  appearance?: appearance,
+  appearance?: appearance
   size?: size
+  block?: boolean
 }
 
 export const Button = ({
   children,
   appearance = 'default',
   size = 'md',
-  className
+  block,
+  className,
+  ...props
 }: IButton) => {
   const styles = classnames(
     'c-button',
     `c-button--${appearance}`,
     `c-button--${size}`,
+    block && `c-button--block`,
     className,
   )
   return (
-    <button type='button' className={ styles }>
+    <button
+      type='button'
+      className={ styles }
+      { ...props }
+    >
       { children }
     </button>
   )
