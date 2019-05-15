@@ -6,6 +6,10 @@ Basic components and folder structure to rapidly build and test ideas.
 
 In the project directory, you can run:
 
+### `npm storybook`
+
+Runs storybook with all componets documented.
+
 ### `npm start`
 
 Runs the app in the development mode.<br>

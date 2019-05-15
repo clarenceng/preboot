@@ -2,16 +2,17 @@ import React from 'react'
 import classnames from 'classnames'
 import './Grid.scss'
 
-type cols = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
+export type cols = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
 
 interface IRow extends React.HTMLAttributes<HTMLDivElement> {
   gutter?: number
 }
+
 interface ICol extends React.HTMLAttributes<HTMLDivElement> {
   length: cols
 }
 
-const Row = ({
+export const Row = ({
   children,
   gutter,
   className
@@ -29,7 +30,7 @@ const Row = ({
   )
 }
 
-const Col = ({
+export const Col = ({
   children,
   length,
   className
@@ -44,9 +45,4 @@ const Col = ({
       { children }
     </div>
   )
-}
-
-export const Grid = {
-  Row,
-  Col
 }

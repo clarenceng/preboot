@@ -28,6 +28,7 @@ $cardSizes: (
 /**
  *
  * 1. size
+ * 2. block
  *
  */
 
@@ -37,4 +38,8 @@ $cardSizes: (
   .c-card--#{$size} {
     padding: #{$value};
   }
+}
+
+.c-card--block {
+  width: 100%;
 }

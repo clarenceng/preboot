@@ -1,5 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
+import { text } from '@storybook/addon-knobs'
 import { size } from '../../types'
 import './TextInput.scss'
 
@@ -9,7 +10,7 @@ interface ITextInput extends React.InputHTMLAttributes<HTMLInputElement> {
 
 export const TextInput = ({
   className,
-  type = 'string',
+  type = 'text',
   inputSize = 'md',
   ...props
 }: ITextInput ) => {
@@ -19,6 +20,10 @@ export const TextInput = ({
     className
   )
   return (
-    <input type={ type } className={ styles } {...props} />
+    <label>
+      <p>label</p>
+      <input type={ type } className={ styles } {...props} value={ text('value', 'hello there') }/>
+    </label>
+    
   )
 }

@@ -54,7 +54,8 @@ $ButtonSizes: (
       border-color: var(--color-#{$appearance}-400);
     }
 
-    &:active {
+    &:active,
+    &:focus {
       background-color: var(--color-#{$appearance}-600);
       border-color: var(--color-#{$appearance}-600);
     }

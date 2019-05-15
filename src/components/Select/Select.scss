@@ -22,11 +22,16 @@ $InputSizes: (
 .c-select {
   display: inline-block;
   background-color: var(--color-white);
-  border: var(--border);
+  border: var(--border) var(--color-gray-500);
   border-radius: var(--radius);
   font-size: var(--font-size-5);
   appearance: none;
+  outline: 0;
   width: 100%;
+
+  &:focus {
+    border-color: var(--color-default-500);
+  }
 }
 
 .c-select-arrow {
