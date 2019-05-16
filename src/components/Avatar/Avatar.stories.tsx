@@ -5,7 +5,9 @@ import { sizeTypes } from '../../storybook'
 import { Avatar } from '.'
 import { Icon } from '../Icon'
 
-const info = ``
+const info = `
+  https://github.com/clarenceng/preboot/tree/master/src/components/Avatar
+`
 
 storiesOf('Avatar', module)
   .add('Default', () => (
@@ -22,11 +24,11 @@ storiesOf('Avatar', module)
     >
       <Icon type='Calendar' color='white' />
     </Avatar>
-  ))
+  ), { info })
   .add('Image', () => (
     <Avatar
       size={ select('size', sizeTypes, sizeTypes[1])}
       src='http://placekitten.com/200/300'
       alt='Cute kitty'
     />
-  ))
+  ), { info })

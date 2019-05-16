@@ -4,7 +4,9 @@ import { text, select, boolean } from '@storybook/addon-knobs'
 import { sizeTypes } from '../../storybook'
 import { Card } from '.'
 
-const info = ``
+const info = `
+  https://github.com/clarenceng/preboot/tree/master/src/components/Card
+`
 
 storiesOf('Card', module)
   .add('default', () => (

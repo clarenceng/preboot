@@ -2,7 +2,9 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { Table, Th, Tr, Td } from '.'
 
-const info = ``
+const info = `
+  https://github.com/clarenceng/preboot/tree/master/src/components/Table
+`
 
 storiesOf('Table', module)
   .add('default', () => (

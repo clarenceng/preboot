@@ -6,7 +6,9 @@ import { Row, Col, cols } from '.'
 
 const colsType: cols[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-const info = ``
+const info = `
+  https://github.com/clarenceng/preboot/tree/master/src/components/Grid
+`
 
 storiesOf('Grid', module)
   .add('default', () => (

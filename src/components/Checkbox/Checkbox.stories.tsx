@@ -4,7 +4,9 @@ import { select } from '@storybook/addon-knobs'
 import { sizeTypes } from '../../storybook'
 import { Checkbox } from '.'
 
-const info = ``
+const info = `
+  https://github.com/clarenceng/preboot/tree/master/src/components/Checkbox
+`
 
 storiesOf('Checkbox', module)
   .add('Input', () => (

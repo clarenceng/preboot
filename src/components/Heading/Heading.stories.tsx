@@ -5,7 +5,9 @@ import { Heading, HeadingTypes } from '.'
 
 const headingTypes: HeadingTypes[] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
 
-const info = ``
+const info = `
+  https://github.com/clarenceng/preboot/tree/master/src/components/Heading
+`
 
 storiesOf('Heading', module)
   .add('default', () => (

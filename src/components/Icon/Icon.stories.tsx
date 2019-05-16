@@ -8,7 +8,9 @@ const IconTypes: iconType[] = ['Arrow', 'Calendar', 'Chevron', 'Load', 'Mail', '
 const FaceTypes: faceType[] = ['down', 'left', 'right', 'up']
 const ColorType: colorType[] = ['default', 'danger', 'info', 'success', 'warning', 'white']
 
-const info = ``
+const info = `
+  https://github.com/clarenceng/preboot/tree/master/src/components/Icon
+`
 
 storiesOf('Icon', module)
   .add('default', () => (

@@ -4,7 +4,9 @@ import { select } from '@storybook/addon-knobs'
 import { ButtonGroup } from '.'
 import { appearanceTypes } from '../../storybook'
 
-const info = ``
+const info = `
+  https://github.com/clarenceng/preboot/tree/master/src/components/ButtonGroup
+`
 
 const options = [{
   label: 'Tabby',

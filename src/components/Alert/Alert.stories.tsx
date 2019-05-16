@@ -4,7 +4,9 @@ import { text, select } from '@storybook/addon-knobs'
 import { appearanceTypes, sizeTypes } from '../../storybook'
 import { Alert } from '.'
 
-const info = ``
+const info = `
+  https://github.com/clarenceng/preboot/tree/master/src/components/Alert
+`
 
 storiesOf('Alert', module)
   .add('default', () => (

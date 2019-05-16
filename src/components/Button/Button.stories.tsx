@@ -5,7 +5,9 @@ import { text, select, boolean } from '@storybook/addon-knobs'
 import { appearanceTypes, sizeTypes } from '../../storybook'
 import { Button } from '.'
 
-const info = ``
+const info = `
+  https://github.com/clarenceng/preboot/tree/master/src/components/Button
+`
 
 storiesOf('Button', module)
   .add('default', () => (

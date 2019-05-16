@@ -6,7 +6,9 @@ import { List, ListItem, listStyle } from '.'
 
 const ListStyle: listStyle[] = ['none', 'circle', 'decimal', 'disc']
 
-const info = ``
+const info = `
+  https://github.com/clarenceng/preboot/tree/master/src/components/List
+`
 
 storiesOf('List', module)
   .add('default', () => (

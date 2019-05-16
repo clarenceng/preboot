@@ -4,7 +4,9 @@ import { text, select } from '@storybook/addon-knobs'
 import { appearanceTypes } from '../../storybook'
 import { Chip } from '.'
 
-const info = ``
+const info = `
+  https://github.com/clarenceng/preboot/tree/master/src/components/Chip
+`
 
 storiesOf('Chip', module)
   .add('default', () => (

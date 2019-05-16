@@ -4,7 +4,9 @@ import { select } from '@storybook/addon-knobs'
 import { sizeTypes } from '../../storybook'
 import { Radio } from '.'
 
-const info = ``
+const info = `
+  https://github.com/clarenceng/preboot/tree/master/src/components/Radio
+`
 
 storiesOf('Radio', module)
   .add('Input', () => (
