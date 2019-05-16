@@ -11,7 +11,9 @@ storiesOf('Card', module)
     <Card
       size={ select('size', sizeTypes, sizeTypes[1])}
       block={ boolean('block', false) }
+      shadow={ select('shadow', sizeTypes, sizeTypes[0])}
     >
+      <h6>Hello</h6>
       { text('text', 'Hello There') }
     </Card>
   ), { info })

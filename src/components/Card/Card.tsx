@@ -6,18 +6,21 @@ import './Card.scss'
 interface ICard extends React.HTMLAttributes<HTMLDivElement> {
   size?: size
   block?: boolean
+  shadow?: size
 }
 
 export const Card = ({
   children,
   size,
   block,
+  shadow,
   className
 }: ICard) => {
   const styles = classnames(
     'c-card',
     `c-card--${size}`,
     block && 'c-card--block',
+    shadow && `c-card--shadow-${shadow}`,
     className
   )
   return (
