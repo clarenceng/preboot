@@ -1,6 +1,7 @@
 # Preboot for me
 
 Basic components and folder structure to rapidly build and test ideas.
+[Working demo](http://cng-storybook.s3-website.ca-central-1.amazonaws.com/?path=/story/alert--default)
 
 ## Available Scripts
 
