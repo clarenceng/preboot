@@ -10,6 +10,9 @@ interface IRow extends React.HTMLAttributes<HTMLDivElement> {
 
 interface ICol extends React.HTMLAttributes<HTMLDivElement> {
   length: cols
+  lg?: cols
+  md?: cols
+  sm?: cols
 }
 
 export const Row = ({
@@ -33,11 +36,17 @@ export const Row = ({
 export const Col = ({
   children,
   length,
+  lg,
+  md,
+  sm,
   className
 }: ICol) => {
   const styles = classnames(
     'c-col',
     `c-col-${length}`,
+    lg && `c-col-${lg}--lg`,
+    md && `c-col-${md}--md`,
+    lg && `c-col-${sm}--sm`,
     className
   )
   return (

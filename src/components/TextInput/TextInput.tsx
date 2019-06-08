@@ -20,10 +20,6 @@ export const TextInput = ({
     className
   )
   return (
-    <label>
-      <p>label</p>
-      <input type={ type } className={ styles } {...props} value={ text('value', 'hello there') }/>
-    </label>
-    
+    <input type={ type } className={ styles } {...props} />
   )
 }

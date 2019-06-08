@@ -46,3 +46,14 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
     grid-column-end: span #{$col};
   }
 }
+
+
+@each $size, $breakpoint in $breakpoints {
+  @media screen and (max-width: $breakpoint) {
+    @each $col in $cols {
+      .c-col-#{$col}--#{$size} {
+        grid-column-end: span #{$col};
+      }
+    }
+  }
+}

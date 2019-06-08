@@ -4,7 +4,7 @@ import { select, boolean } from '@storybook/addon-knobs'
 import { sizeTypes } from '../../storybook'
 import { Icon, iconType, faceType, colorType } from '.'
 
-const IconTypes: iconType[] = ['Arrow', 'Calendar', 'Chevron', 'Load', 'Mail', 'Minus', 'Plus', 'Trash']
+const IconTypes: iconType[] = ['Arrow', 'Calendar', 'Chevron', 'Load', 'Mail', 'Minus', 'Pencil', 'Plus', 'Trash']
 const FaceTypes: faceType[] = ['down', 'left', 'right', 'up']
 const ColorType: colorType[] = ['default', 'danger', 'info', 'success', 'warning', 'white']
 

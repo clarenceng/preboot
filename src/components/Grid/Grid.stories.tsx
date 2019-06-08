@@ -13,7 +13,12 @@ const info = `
 storiesOf('Grid', module)
   .add('default', () => (
     <Row gutter={ number('gutter', 8) }>
-      <Col length={select('length', colsType, colsType[0])}>
+      <Col
+        length={select('length', colsType, colsType[0])}
+        lg={select('lg', colsType, colsType[0])}
+        md={select('md', colsType, colsType[0])}
+        sm={select('sm', colsType, colsType[0])}
+      >
         <Card block>Col 1</Card>
       </Col>
       <Col length={ 4 }>
